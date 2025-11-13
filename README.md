@@ -427,7 +427,7 @@ xdotool getactivewindow getwindowclassname
 # Check if scripts exist
 ls -l ~/.local/bin/omarchy-*
 
-# Make sure they're executable
+##Make sure they're executable
 chmod +x ~/.local/bin/omarchy-*
 
 # Check if ~/.local/bin is in PATH
