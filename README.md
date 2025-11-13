@@ -198,7 +198,7 @@ case "$ACTIVE_WINDOW" in
 esac
 ```
 
-### Make all scripts executable:
+**Make all scripts executable:**
 ```bash
 chmod +x ~/.local/bin/omarchy-*
 ```
@@ -210,13 +210,15 @@ chmod +x ~/.local/bin/omarchy-*
 ### Core Applications
 **Location:** Settings → Keyboard → Application Shortcuts
 
+**Note:** Replace `username` with your actual username in all commands below.
+
 | Keybind | Command | Description |
 |---------|---------|-------------|
-| `Super + Return` | `alacritty` | Terminal |
-| `Super + Alt + Space` | `~/.local/bin/omarchy-menu` | App Launcher (Rofi) |
+| `Super + Return` | `/usr/bin/alacritty` | Terminal |
+| `Super + Space` | `/bin/bash /home/username/.local/bin/omarchy-menu` | App Launcher (Rofi) |
 | `Super + Shift + F` | `nautilus --new-window` | File Manager |
-| `Super + Shift + B` | `~/.local/bin/omarchy-launch-browser` | Browser |
-| `Super + Shift + Alt + B` | `~/.local/bin/omarchy-launch-browser --private` | Browser (Private) |
+| `Super + Shift + B` | `/bin/bash /home/username/.local/bin/omarchy-launch-browser` | Browser |
+| `Super + Shift + Alt + B` | `/bin/bash /home/username/.local/bin/omarchy-launch-browser --private` | Browser (Private) |
 | `Super + Shift + N` | `code` | Editor |
 | `Super + Shift + T` | `alacritty -e btop` | Activity Monitor |
 
@@ -227,8 +229,8 @@ chmod +x ~/.local/bin/omarchy-*
 |---------|---------|-------------|
 | `Super + W` | `xdotool getactivewindow windowkill` | Close Window |
 | `Super + F` | `wmctrl -r :ACTIVE: -b toggle,fullscreen` | Fullscreen Toggle |
-| `Super + C` | `~/.local/bin/omarchy-smart-copy` | Copy (Smart) |
-| `Super + V` | `~/.local/bin/omarchy-smart-paste` | Paste (Smart) |
+| `Super + C` | `/bin/bash /home/username/.local/bin/omarchy-smart-copy` | Copy (Smart) |
+| `Super + V` | `/bin/bash /home/username/.local/bin/omarchy-smart-paste` | Paste (Smart) |
 | `Super + L` | `xflock4` | Lock Screen |
 
 ### Screenshots
@@ -236,9 +238,9 @@ chmod +x ~/.local/bin/omarchy-*
 
 | Keybind | Command | Description |
 |---------|---------|-------------|
-| `Print` | `~/.local/bin/omarchy-screenshot-selection` | Screenshot to Clipboard |
-| `Super + Print` | `~/.local/bin/omarchy-screenshot-file` | Screenshot to File |
-| `Super + Shift + S` | `~/.local/bin/omarchy-screenshot-selection` | Screenshot Selection |
+| `Print` | `/bin/bash /home/username/.local/bin/omarchy-screenshot-selection` | Screenshot to Clipboard |
+| `Super + Print` | `/bin/bash /home/username/.local/bin/omarchy-screenshot-file` | Screenshot to File |
+| `Super + Shift + S` | `/bin/bash /home/username/.local/bin/omarchy-screenshot-selection` | Screenshot Selection |
 
 ### Media Controls
 **Location:** Settings → Keyboard → Application Shortcuts
@@ -270,11 +272,11 @@ chmod +x ~/.local/bin/omarchy-*
 
 | Keybind | Command | Description |
 |---------|---------|-------------|
-| `Super + Shift + 1` | `~/.local/bin/omarchy-window-move-workspace 1` | Move to Workspace 1 |
-| `Super + Shift + 2` | `~/.local/bin/omarchy-window-move-workspace 2` | Move to Workspace 2 |
-| `Super + Shift + 3` | `~/.local/bin/omarchy-window-move-workspace 3` | Move to Workspace 3 |
-| `Super + Shift + 4` | `~/.local/bin/omarchy-window-move-workspace 4` | Move to Workspace 4 |
-| `Super + Shift + 5` | `~/.local/bin/omarchy-window-move-workspace 5` | Move to Workspace 5 |
+| `Super + Shift + 1` | `/bin/bash /home/username/.local/bin/omarchy-window-move-workspace 1` | Move to Workspace 1 |
+| `Super + Shift + 2` | `/bin/bash /home/username/.local/bin/omarchy-window-move-workspace 2` | Move to Workspace 2 |
+| `Super + Shift + 3` | `/bin/bash /home/username/.local/bin/omarchy-window-move-workspace 3` | Move to Workspace 3 |
+| `Super + Shift + 4` | `/bin/bash /home/username/.local/bin/omarchy-window-move-workspace 4` | Move to Workspace 4 |
+| `Super + Shift + 5` | `/bin/bash /home/username/.local/bin/omarchy-window-move-workspace 5` | Move to Workspace 5 |
 
 ---
 
@@ -427,7 +429,7 @@ xdotool getactivewindow getwindowclassname
 # Check if scripts exist
 ls -l ~/.local/bin/omarchy-*
 
-##Make sure they're executable
+# Make sure they're executable
 chmod +x ~/.local/bin/omarchy-*
 
 # Check if ~/.local/bin is in PATH
@@ -575,5 +577,6 @@ sudo pacman -Rns picom rofi nitrogen xdotool wmctrl
 
 ---
 
-**Last Updated:** 2024
-**Configuration Version:** 1.0
+**Last Updated:** 2025
+**Configuration Version:** 1.1
+**Note:** Remember to replace `username` with your actual username in all command paths!
