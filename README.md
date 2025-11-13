@@ -198,7 +198,7 @@ case "$ACTIVE_WINDOW" in
 esac
 ```
 
-**Make all scripts executable:**
+### Make all scripts executable:
 ```bash
 chmod +x ~/.local/bin/omarchy-*
 ```
